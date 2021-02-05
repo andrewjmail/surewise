@@ -14,6 +14,7 @@
 
             body {
                 background: lightgrey;
+                margin: 0;
             }
 
             .container {

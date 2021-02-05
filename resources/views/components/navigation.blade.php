@@ -56,6 +56,22 @@
     .hide + .navigation__category__container {
         display:none;
     }
+
+    @media(max-width: 900px) {
+        .navigation__container {
+            flex-direction: column;
+        }
+        .container {
+            padding: 0;
+        }
+        .navigation__category__container {
+            position: static;
+        }
+        .navigation__category__item__link {
+            text-align: center;
+        }
+    }
+
 </style>
 
 <ul class="navigation__container">
