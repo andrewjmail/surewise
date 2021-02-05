@@ -31,7 +31,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/{navigationCategory}', 'NavigationCategoryController@show')->name('show');
         Route::put('/{navigationCategory}', 'NavigationCategoryController@update')->name('update');
         Route::delete('/{navigationCategory}', 'NavigationCategoryController@delete')->name('delete');
-        Route::post('/', 'NavigationCategoryController@store')->name('navigation-category.store');
+        Route::post('/', 'NavigationCategoryController@store')->name('store');
     });
     Route::prefix('navigation-items')->name('navigation-item.')->group(function () {
         Route::get('/create', 'NavigationItemController@create')->name('create');
